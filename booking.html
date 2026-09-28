@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieHub - Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-page">
+  <div class="booking-box">
+    <h1>🎬 Book Your Ticket</h1>
+
+    <label for="movie">Movie</label>
+    <select id="movie">
+      <option>Super Hero</option>
+      <option>Space Adventure</option>
+      <option>Funny Panda</option>
+    </select>
+
+    <label>Choose Seats</label>
+    <div class="seats" id="seats"></div>
+
+    <p>Selected Seats: <strong id="selectedSeats">None</strong></p>
+    <p>Total: <strong id="total">₹0</strong></p>
+
+    <button onclick="bookTicket()">Confirm Booking</button>
+    <button class="secondary" onclick="window.close()">Cancel</button>
+
+    <div id="success" class="success hidden"></div>
+  </div>
+
+  <script src="booking.js"></script>
+</body>
+</html>

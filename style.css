@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #222;
+}
+
+header {
+  background: #202a44;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+.hero {
+  max-width: 850px;
+  margin: 35px auto 20px;
+  padding: 45px 25px;
+  text-align: center;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 13px 20px;
+  background: #e91e63;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: .9;
+}
+
+.movies {
+  max-width: 900px;
+  margin: 25px auto;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 250px;
+  padding: 18px;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0,0,0,.07);
+}
+
+.poster {
+  height: 150px;
+  display: grid;
+  place-items: center;
+  font-size: 70px;
+  background: #eef1f8;
+  border-radius: 12px;
+}
+
+.booking-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.booking-box {
+  width: min(550px, 100%);
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.booking-box h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.seats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  margin: 12px 0 20px;
+}
+
+.seat {
+  padding: 9px 5px;
+  background: #dfe4ea;
+  color: #222;
+  border-radius: 7px;
+}
+
+.seat.selected {
+  background: #e91e63;
+  color: white;
+}
+
+.secondary {
+  background: #777;
+  margin-left: 8px;
+}
+
+.success {
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #e7f8ed;
+  border: 1px solid #a9dfba;
+  line-height: 1.7;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .seats {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .booking-box {
+    padding: 20px;
+  }
+}
